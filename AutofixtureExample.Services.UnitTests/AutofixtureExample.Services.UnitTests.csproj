@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture.Idioms" Version="4.5.0" />
+    <PackageReference Include="AutoFixture.Xunit2" Version="4.5.0" />
+    <PackageReference Include="FluentAssertions" Version="5.4.2" />
+    <PackageReference Include="SemanticComparison" Version="4.0.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutofixtureExample.Services\AutofixtureExample.Services.csproj" />
+    <ProjectReference Include="..\AutofixtureExample.TestUtil\AutofixtureExample.TestUtil.csproj" />
+  </ItemGroup>
+
+</Project>
